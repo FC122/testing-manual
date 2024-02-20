@@ -1,4 +1,4 @@
-# Testing Manual
+# Software Testing Manual
 
 ## Goal
 The goal of this Software Testing Manual is to provide a comprehensive overview of software testing principles, methodologies, and best practices. It aims to equip developers, testers, and stakeholders with the necessary knowledge and strategies to ensure the quality, reliability, and robustness of software products.
@@ -110,7 +110,7 @@ This is a systematic method to generate test cases where different combinations 
 - Ensures interactions of input variables are tested.
 - Useful when there are multiple inputs with many possible values.
 - Often uses tools like PICT for generating combinations.
-Good read: https://embeddedcomputing.com/technology/debug-and-test/the-importance-of-combinatorial-test-design
+- Good read: https://embeddedcomputing.com/technology/debug-and-test/the-importance-of-combinatorial-test-design
 
 #### Equivalence Class Partitioning (ECP)
 This technique divides input data of a software unit into partitions of equivalent data from which test cases can be derived.
@@ -119,7 +119,7 @@ This technique divides input data of a software unit into partitions of equivale
 - Tests are derived from each class, usually one test per class.
 - Helps identify classes of valid and invalid inputs.
 - Ensures coverage without exhaustive testing.
-Good read: https://www.geeksforgeeks.org/equivalence-partitioning-method/
+- Good read: https://www.geeksforgeeks.org/equivalence-partitioning-method/
 
 #### Boundary Value Analysis (BVA)
 This is closely related to ECP and focuses on values at boundaries of these partitions.
@@ -128,7 +128,7 @@ This is closely related to ECP and focuses on values at boundaries of these part
 - Assumes bugs are likely at the boundaries of input domains.
 - Commonly tests the values just inside and outside boundaries.
 - Complements ECP by catching edge case bugs.
-Good read: https://www.geeksforgeeks.org/software-testing-boundary-value-analysis/?ref=rbp
+- Good read: https://www.geeksforgeeks.org/software-testing-boundary-value-analysis/?ref=rbp
 
 #### Decision Tables
 These tables help in understanding how different combinations of inputs produce different outputs. It's especially helpful when there are multiple inputs that can vary.
@@ -137,7 +137,7 @@ These tables help in understanding how different combinations of inputs produce 
 - Each row in the table represents a unique combination.
 - Ensures that all possible combinations are considered.
 - Makes complex decision logic easier to understand.
-Good read: https://www.guru99.com/decision-table-testing.html
+- Good read: https://www.guru99.com/decision-table-testing.html
 
 #### State Transition Testing
 If the software system can be represented as a finite number of states and transitions between those states based on certain inputs/events, this method is applicable. It ensures coverage of all states and transitions.
@@ -146,7 +146,7 @@ If the software system can be represented as a finite number of states and trans
 - Ensures that all states and transitions are tested.
 - Useful for systems with predictable state sequences.
 - Often represented using state transition diagrams.
-Good read: https://www.guru99.com/state-transition-testing.html
+- Good read: https://www.guru99.com/state-transition-testing.html
 
 #### Use Case Testing
 This approach derives test cases from use cases. Each use case provides a sequence of events, and the derived test cases ensure coverage of these sequences.
@@ -155,7 +155,7 @@ This approach derives test cases from use cases. Each use case provides a sequen
 - Focuses on user's perspective and how they interact with the system.
 - Ensures all user interactions are tested.
 - Can reveal gaps in functionality or user experience.
-Good read: https://www.guru99.com/use-case-testing.html
+- Good read: https://www.guru99.com/use-case-testing.html
 
 #### Path Testing
 This method is about ensuring every possible route through a given piece of software is executed.
@@ -164,7 +164,7 @@ This method is about ensuring every possible route through a given piece of soft
 - Identifies all possible routes a user can take through the software.
 - Can be complex for large systems due to numerous paths.
 - Ensures code robustness by testing all execution paths.
-Good read: https://www.guru99.com/basis-path-testing.html
+- Good read: https://www.guru99.com/basis-path-testing.html
 
 #### Error Guessing
 Error Guessing relies on the tester's skill and experience rather than a formalized approach. While it might sound informal, it can be very effective in catching defects that structured testing might miss. Combining error guessing with other testing methods can provide more comprehensive test coverage
@@ -173,4 +173,4 @@ Error Guessing relies on the tester's skill and experience rather than a formali
 - Not systematic, but complements formal testing techniques.
 - Often used to identify high-risk areas or common mistakes in code.
 - It's valuable because it leverages the expertise of seasoned testers who can predict potential issues based on past experiences.
-Good read: https://www.geeksforgeeks.org/error-guessing-in-software-testing/?ref=lbp
+- Good read: https://www.geeksforgeeks.org/error-guessing-in-software-testing/?ref=lbp
