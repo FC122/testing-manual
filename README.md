@@ -27,7 +27,7 @@ This Software Testing Manual covers a wide range of topics related to software t
 Contributions to this manual, including suggestions, corrections, and additional content, are highly encouraged. Please feel free to submit pull requests or raise issues to improve the quality and relevance of this resource for the benefit of the software testing community.
 
 ## Writing Test Cases
-### Test case best practices
+### Test case writing - best practice
 - Make it simple, KISS - Write test cases as simple as possible while giving the most information. They should be clear and concise.
 - Write it from the perspective of an end user - Put yourself in the shoes of an end user and write test cases as such. If there are multiple different users/stakeholders write test cases that cover those situations as well.
 - Don't repeat it, DRY - If two test cases do the same thing in a similar manner consider if it truly makes sense to have both.
@@ -101,4 +101,76 @@ Check if user receives a notification after creating an entity
 
 Check that response status is 200 on get users request
 
-TODO: Methodologies
+### Test Case Writing Metodologies
+
+#### Combinatorial Test Design (CTD)
+This is a systematic method to generate test cases where different combinations of input values are used. Tools like PICT (Pairwise Independent Combinatorial Testing) are often used to generate combinations.
+- Generates test cases using combinations of inputs.
+- Reduces the number of tests by focusing on variable combinations.
+- Ensures interactions of input variables are tested.
+- Useful when there are multiple inputs with many possible values.
+- Often uses tools like PICT for generating combinations.
+Good read: https://embeddedcomputing.com/technology/debug-and-test/the-importance-of-combinatorial-test-design
+
+#### Equivalence Class Partitioning (ECP)
+This technique divides input data of a software unit into partitions of equivalent data from which test cases can be derived.
+- Divides input data into equivalent classes.
+- Reduces tests by assuming that all members of a class behave similarly.
+- Tests are derived from each class, usually one test per class.
+- Helps identify classes of valid and invalid inputs.
+- Ensures coverage without exhaustive testing.
+Good read: https://www.geeksforgeeks.org/equivalence-partitioning-method/
+
+#### Boundary Value Analysis (BVA)
+This is closely related to ECP and focuses on values at boundaries of these partitions.
+- Focuses on testing the edge or boundary values.
+- Derived from equivalence class partitioning.
+- Assumes bugs are likely at the boundaries of input domains.
+- Commonly tests the values just inside and outside boundaries.
+- Complements ECP by catching edge case bugs.
+Good read: https://www.geeksforgeeks.org/software-testing-boundary-value-analysis/?ref=rbp
+
+#### Decision Tables
+These tables help in understanding how different combinations of inputs produce different outputs. It's especially helpful when there are multiple inputs that can vary.
+- Represents combinations of inputs to determine outputs.
+- Useful when logic involves multiple conditions.
+- Each row in the table represents a unique combination.
+- Ensures that all possible combinations are considered.
+- Makes complex decision logic easier to understand.
+Good read: https://www.guru99.com/decision-table-testing.html
+
+#### State Transition Testing
+If the software system can be represented as a finite number of states and transitions between those states based on certain inputs/events, this method is applicable. It ensures coverage of all states and transitions.
+- Models software as a system of states and transitions.
+- Tests are derived from state changes based on inputs/events.
+- Ensures that all states and transitions are tested.
+- Useful for systems with predictable state sequences.
+- Often represented using state transition diagrams.
+Good read: https://www.guru99.com/state-transition-testing.html
+
+#### Use Case Testing
+This approach derives test cases from use cases. Each use case provides a sequence of events, and the derived test cases ensure coverage of these sequences.
+- Derives test cases from system use cases.
+- Each use case represents a sequence of events or actions.
+- Focuses on user's perspective and how they interact with the system.
+- Ensures all user interactions are tested.
+- Can reveal gaps in functionality or user experience.
+Good read: https://www.guru99.com/use-case-testing.html
+
+#### Path Testing
+This method is about ensuring every possible route through a given piece of software is executed.
+- Ensures all paths through the software are tested.
+- Derived from the software's control flow graph.
+- Identifies all possible routes a user can take through the software.
+- Can be complex for large systems due to numerous paths.
+- Ensures code robustness by testing all execution paths.
+Good read: https://www.guru99.com/basis-path-testing.html
+
+#### Error Guessing
+Error Guessing relies on the tester's skill and experience rather than a formalized approach. While it might sound informal, it can be very effective in catching defects that structured testing might miss. Combining error guessing with other testing methods can provide more comprehensive test coverage
+- It's a testing technique based on the tester's experience.
+- Testers use their intuition and knowledge to guess where defects might occur.
+- Not systematic, but complements formal testing techniques.
+- Often used to identify high-risk areas or common mistakes in code.
+- It's valuable because it leverages the expertise of seasoned testers who can predict potential issues based on past experiences.
+Good read: https://www.geeksforgeeks.org/error-guessing-in-software-testing/?ref=lbp
