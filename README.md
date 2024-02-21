@@ -174,3 +174,35 @@ Error Guessing relies on the tester's skill and experience rather than a formali
 - Often used to identify high-risk areas or common mistakes in code.
 - It's valuable because it leverages the expertise of seasoned testers who can predict potential issues based on past experiences.
 - Good read: https://www.geeksforgeeks.org/error-guessing-in-software-testing/?ref=lbp
+
+# Testing Workflow
+### 1. Read the task description, gather info on the new task/functionality
+Understand the requirements and objectives of the new functionality or task. This involves reviewing any documentation, user stories, or specifications provided.
+
+### 2. Do the initial inspection of the new functionality
+Conduct an initial examination of the new functionality to understand its basic features, user interface elements, and expected behavior.
+
+### 4. Do the exploratory testing:
+  - Play around: Interact with the functionality as an end user would to get a feel for its usability and functionality.
+  - Ask yourself: How can I break this functionality?: Identify potential weak points, edge cases, and scenarios where the functionality may fail.
+  - Write down questions: Document any uncertainties, ambiguities, or areas requiring clarification.
+  - Try breaking something: Actively attempt to disrupt the functionality by providing unexpected inputs, performing actions out of sequence, or triggering error conditions.
+  - Write down the results: Record observations, bugs, and any unexpected behavior encountered during exploratory testing.
+### 5. Write test cases based on knowledge gained from the previous step
+Formalize test scenarios and cases based on insights gained during exploratory testing. These test cases should cover a variety of scenarios, including positive and negative test cases, boundary conditions, and error handling.
+  - Separate test cases on manual and to be automated: Determine which test cases can be automated and which require manual execution based on factors such as complexity, frequency of execution, and return on investment for automation.
+
+### 6. Do manual tests (if there is any)
+Execute manual test cases as per the defined test plan. Document test results, including any deviations from expected behavior and encountered defects.
+  - Write down the results: Record the outcome of manual testing, including any issues found, test case status (pass/fail), and any additional observations.
+
+### 7. Write test automations (if needed)
+Develop automated test scripts for the identified test cases using appropriate test automation tools and frameworks. Automate repetitive and time-consuming test scenarios to improve testing efficiency and coverage.
+  - Write down the results: Document the results of automated testing, including test execution status, any failures, and performance metrics.
+
+### 8. Go back to step 4 if you decide it is needed
+Iteratively refine test cases and repeat testing cycles as necessary to address newly discovered issues or changes in requirements.
+
+### 9. Report findings on Management Tool
+Communicate test results, including defects, test coverage, and overall quality assessment, to relevant stakeholders such as development teams and project management tools like Jira.
+TODO: Diagram
