@@ -206,3 +206,28 @@ Iteratively refine test cases and repeat testing cycles as necessary to address 
 ### 9. Report findings on Management Tool
 Communicate test results, including defects, test coverage, and overall quality assessment, to relevant stakeholders such as development teams and project management tools like Jira.
 TODO: Diagram
+
+### Software testing principles
+
+The ISTQB (International Software Testing Qualifications Board) outlines seven core principles that serve as the foundation for software testing. These principles guide testers in performing effective and efficient testing, focusing on essential concepts to ensure quality in software development. Here’s a breakdown of each principle:
+
+#### 1. Testing Shows the Presence of Defects, Not Their Absence
+Testing can prove that defects are present in software, but it cannot prove that no defects exist. In other words, no matter how much testing is done, there is always a possibility that some defects remain undiscovered. The goal of testing is to reduce the number of undiscovered issues, not to guarantee a defect-free product.
+
+#### 2. Exhaustive Testing is Impossible
+It is impractical to test all possible inputs and scenarios in software due to time and resource constraints. Testing efforts are, therefore, prioritized based on risk and importance, focusing on the most crucial areas to maximize the impact of the tests.
+
+#### 3. Early Testing Saves Time and Money
+Testing should begin as early as possible in the software development lifecycle. Detecting and fixing defects early is far less expensive than fixing them later, as errors discovered later (such as in production) are typically more costly and complex to address.
+
+#### 4. Defect Clustering
+In many software systems, a majority of defects tend to be concentrated in a small number of modules or functionalities. Testers can apply this principle to prioritize and target areas where defects are likely to cluster, focusing testing efforts to maximize efficiency.
+
+#### 5. The Pesticide Paradox
+If the same tests are repeated over and over, eventually those tests will stop finding new defects. This phenomenon is known as the pesticide paradox. To counteract this, testers should regularly review and update test cases, introducing new scenarios to identify additional defects and improve test effectiveness.
+
+#### 6. Testing is Context-Dependent
+The approach and types of testing used vary depending on the context of the software being developed. For example, testing strategies will differ between safety-critical applications (like medical devices) and commercial applications (like social media apps). Recognizing the context helps testers design appropriate tests that align with the software’s purpose and environment.
+
+#### 7. Absence of Errors Fallacy
+Even if the software is error-free, it may still fail to meet user needs or business requirements. The absence of defects alone does not ensure that the software is usable or fit for purpose. Testing should therefore focus not only on finding defects but also on ensuring that the software aligns with the intended use and meets all requirements.
