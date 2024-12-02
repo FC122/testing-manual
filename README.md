@@ -173,7 +173,6 @@ Error Guessing relies on the tester's skill and experience rather than a formali
 - Not systematic, but complements formal testing techniques.
 - Often used to identify high-risk areas or common mistakes in code.
 - It's valuable because it leverages the expertise of seasoned testers who can predict potential issues based on past experiences.
-- Good read: https://www.geeksforgeeks.org/error-guessing-in-software-testing/?ref=lbp
 
 # Testing Workflow
 ### 1. Read the task description, gather info on the new task/functionality
